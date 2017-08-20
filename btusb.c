@@ -336,6 +336,9 @@ static const struct usb_device_id blacklist_table[] = {
 	/* Silicon Wave based devices */
 	{ USB_DEVICE(0x0c10, 0x0000), .driver_info = BTUSB_SWAVE },
 
+	/* Should fixe bluetooth of Edimax n150 2in1 combo (Realtek chipset) */
+	{ USB_DEVICE(0x7392, 0xa611), .driver_info = BTUSB_REALTEK }
+
 	{ }	/* Terminating entry */
 };
 
